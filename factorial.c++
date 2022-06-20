@@ -14,7 +14,7 @@ int main()
         fact *= i;
     }
 
-    cout << "Factorial is of " << num <<" is " << fact;
+    cout << "Factorial is of " << num << " is " << fact;
 
     cout << endl;
 
