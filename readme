@@ -7,7 +7,7 @@
 # Types of programming languages
 
 - High-level: are closer to human languages and highly understandable. Programs written in a high-level language must be translated into machine language by a "compiler" or "interpreter". ex: COBOL, c, c++,..
- 
+
   `Compiler/ interpreter` are the computer programs that convert a high-level programming language to a low level machine language.
 
 - Intermediate/ Assembly : it uses short abbreviations codes(Mnemonics) for instructions and allows the programmer to introduce names of blocks of memory that hold data. It can be easily translated to machine language.
@@ -18,5 +18,23 @@
 
 C++ is a high-level language developed by Bjarne Stroustrup starting in 1979 at Bell labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and various versions of UNIX.
 
- It is an extension to C programming language
- It has OOP features.
+It is an extension to C programming language
+It has OOP features.
+
+# Variables
+
+Variable : named storage that our programs can manipulate
+Each variable needs an identifier that distinguishes if from others.
+
+A valid identifier is a sequence of one or more letters, digits or underscore
+Upper and lowercase letters are distinct because c++ is case-sensitive
+
+`Fundamental data-types`
+
+- char : character or small integer(size = 1 byte , range -128 to 127)
+- short int : short integer(size = 2 bytes)
+- int : integer(4 bytes)
+- long int(long): integer(4bytes)
+- bool: boolean value.TRUE or FALSE (1 byte)
+- float: floating point number (4 bytes)
+- Double: double precision floating point (8 bytes)
