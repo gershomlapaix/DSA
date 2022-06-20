@@ -1,0 +1,22 @@
+1. A programming language : is a formal computer language or constructed language
+   designed to communicate instructions to a machine, particularly a computer
+
+2. An algorithm: a set of rules to be followed in calculations or other problem-solving operations,
+   especially computer
+
+# Types of programming languages
+
+- High-level: are closer to human languages and highly understandable. Programs written in a high-level language must be translated into machine language by a "compiler" or "interpreter". ex: COBOL, c, c++,..
+ 
+  `Compiler/ interpreter` are the computer programs that convert a high-level programming language to a low level machine language.
+
+- Intermediate/ Assembly : it uses short abbreviations codes(Mnemonics) for instructions and allows the programmer to introduce names of blocks of memory that hold data. It can be easily translated to machine language.
+
+- Machine language: it's the language of machines, constisting of bits(1 s and 0s) put together into chunks like bytes, a group of 8 bits, and lots of other larger sizes.
+
+## C++
+
+C++ is a high-level language developed by Bjarne Stroustrup starting in 1979 at Bell labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and various versions of UNIX.
+
+ It is an extension to C programming language
+ It has OOP features.
