@@ -38,3 +38,16 @@ Upper and lowercase letters are distinct because c++ is case-sensitive
 - bool: boolean value.TRUE or FALSE (1 byte)
 - float: floating point number (4 bytes)
 - Double: double precision floating point (8 bytes)
+
+Note: The size and range of data types depend on the system the program is compiled on.
+
+# Operators
+
+An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations.
+
+- Arithmetic operators(+, -, \*, /, %, ++, --)
+- Relational operators(==, !=, >, <, >=, <=)
+- Logical operators(&&, ||, !)
+- Assignment operators(=, +=, -=, \*=, /=, %=)
+- Bitwise operators(&, |,, ^, ~, <<, >>, )
+- Misc operators(sizeof, condition ? X:Y)
