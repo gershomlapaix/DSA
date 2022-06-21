@@ -51,3 +51,17 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 - Assignment operators(=, +=, -=, \*=, /=, %=)
 - Bitwise operators(&, |,, ^, ~, <<, >>, )
 - Misc operators(sizeof, condition ? X:Y)
+
+
+## Queue
+Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
+
+It is a simple data structure that allows  adding and removing elements in FIFO or LILO.
+
+ * Elements are added at one end(rear end) === Enqueue
+ * ELements are removed from other end(front/head end).  === Dequeue
+
+  => Operations performed
+
+  1) Enqueue()    2) dequeue  3) isFull   4) isEmpty  5) count
+
