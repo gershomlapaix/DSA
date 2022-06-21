@@ -53,13 +53,24 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 - Misc operators(sizeof, condition ? X:Y)
 
 ## Pointers
- Dynamic memory allocation: allows to set array size dynamically during run time rather that at compile time.
 
+Dynamic memory allocation: allows to set array size dynamically during run time rather that at compile time.
 
 ## Functions
- 1. `Inline function`: if a function is inline, the compiler places it's copy of the code at each point where that function is called at compile time.
 
- No control transfer is made when the function is inline.
+1.  `Inline function`: if a function is inline, the compiler places it's copy of the code at each point where that function is called at compile time.
+
+No control transfer is made when the function is inline.
+
+2.  `Default parameters` : default argument is a value provided in function declaration that automatically assigned by the compiler if caller of the function doesn't provide a value for the argument with defualt value.
+
+3.  `Pass by value` : the call/pass by value method of passing arguments to a function copies the actual value of an argument into the formal paramter of the function.
+
+In this case ,the changes made to then parameter inside the function have no effects on the argument. C++ is pass by value by default.
+
+4. `Pass by reference`: call by reference method of passing arguments to a function copies the referene of an argument into the formal parameter.
+
+Inside the function, the reference is used to access the actual arguments used in the call. This means that the changes made to the parameter affect the passed argument.
 
 ## Queue
 
