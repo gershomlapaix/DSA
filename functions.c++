@@ -32,6 +32,14 @@ void passByReference(int &x, int &y)
     y = z;
 }
 
+// call by pointer
+void passByAddress(int *x, int *y)
+{
+    int z = *x;
+    *x = *y;
+    *y = z;
+}
+
 int main()
 {
 
@@ -52,6 +60,13 @@ int main()
     cout << "\tBefore swapping a = " << a << " and b = " << b << endl;
 
     passByReference(a, b);
+    cout << "\n\tAfter swapping a = " << a << " and b = " << b << endl;
+
+    cout << "\n -------------------------\n";
+    cout << "Pass by address(pointer)\n";
+    cout << "\tBefore swapping a = " << a << " and b = " << b << endl;
+
+    passByAddress(&a, &b);
     cout << "\n\tAfter swapping a = " << a << " and b = " << b << endl;
     return 0;
 }

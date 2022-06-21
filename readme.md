@@ -72,6 +72,10 @@ In this case ,the changes made to then parameter inside the function have no eff
 
 Inside the function, the reference is used to access the actual arguments used in the call. This means that the changes made to the parameter affect the passed argument.
 
+5. `Pass by pointer or call by address`: the call by pointer methid of passign arguments to a funcation copies the address of an argument into the formal parameter.
+
+Inside the function, the address is used to access the actual argument used in the call. This means that the changes made to the parameter affect the passed argument.
+
 ## Queue
 
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
