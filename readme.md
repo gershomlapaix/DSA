@@ -52,16 +52,38 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 - Bitwise operators(&, |,, ^, ~, <<, >>, )
 - Misc operators(sizeof, condition ? X:Y)
 
+## Pointers
+ Dynamic memory allocation: allows to set array size dynamically during run time rather that at compile time.
+
 
 ## Queue
+
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
 
-It is a simple data structure that allows  adding and removing elements in FIFO or LILO.
+It is a simple data structure that allows adding and removing elements in FIFO or LILO.
 
- * Elements are added at one end(rear end) === Enqueue
- * ELements are removed from other end(front/head end).  === Dequeue
+- Elements are added at one end(rear end) === Enqueue
+- ELements are removed from other end(front/head end). === Dequeue
 
-  => Operations performed
+=> Operations performed
 
-  1) Enqueue()    2) dequeue  3) isFull   4) isEmpty  5) count
+1. Enqueue() 2) dequeue 3) isFull 4) isEmpty 5) count
 
+## Linked list
+
+It's a linear data structure, in which elements are stored at contiguous memory locations. The elements in linked list are linked using `pointers`
+
+Linked list has nodes where each node contains `data field` and `reference` to the next node in the list.
+
+# Advantages
+
+    1. Dynamic size(creating the space needed only)
+    2. Ease of insertion and deletion
+
+# Disadvantages
+
+    1. Random access is not allowed. We have to access elements sequentially starting from the first node.
+    2. Extra memory space for a pointer is required
+    3. Not cache friendly.
+
+\*\* Singly linked list
