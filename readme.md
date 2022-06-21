@@ -56,6 +56,11 @@ An operator is a symbol that tells the compiler to perform specific mathematical
  Dynamic memory allocation: allows to set array size dynamically during run time rather that at compile time.
 
 
+## Functions
+ 1. `Inline function`: if a function is inline, the compiler places it's copy of the code at each point where that function is called at compile time.
+
+ No control transfer is made when the function is inline.
+
 ## Queue
 
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
