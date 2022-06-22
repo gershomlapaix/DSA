@@ -59,7 +59,36 @@ public:
         return temp;
     }
 
-   
+    // Append a node to the list
+    void appendNode(Node *n)
+    {
+        if (nodeExists(n->key) != NULL)
+        {
+            cout << "Node already exists with key value :" << n->key << ".Append another node with different key value\n";
+        }
+
+        else
+        {
+            if (head == NULL)
+            {
+                head = n;
+                cout << "Node appended.\n";
+            }
+            else
+            {
+                Node *ptr = head;
+                while (ptr->next != NULL)
+                {
+                    ptr = ptr->next;
+                }
+
+                ptr->next = n;
+                cout << "Node appended\n";
+            }
+        }
+    }
+
+    
 
     // insert a node after a particular node in the list
 };
