@@ -172,3 +172,19 @@ Linked list has nodes where each node contains `data field` and `reference` to t
 
 \*\* Singly linked list
 
+## Tree DS
+
+Tree is a non linear data structure that simulates a hierarchical tree structure with a root value and subtress of children with parent node, represented as set linked nodes.
+
+Conside school staff flow as hierarchical tree example.
+
+\*\* Important tree terms
+
+1.  Root: is a special node in a tree. The entire tree is referenced throut it and doesn't have a parent.
+2.  Parent node: is an immediate predecessor of a node
+3.  Child node: all immediate successors of a node are its children.
+4.  Siblings: nodes with the same parent are called siblings.
+5.  leaf: last node in the tree. there is node after this node.
+6.  Edge: this is a connection between one node to another. It is a line between two nodes or a node and a leaf.
+7.  Path: is a number of successive edges from source node to destination node.
+8.  Degree of node: this is equal to number of children, a node have.
