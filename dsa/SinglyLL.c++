@@ -88,7 +88,20 @@ public:
         }
     }
 
-    
+    // Prepend node
+    void prependNode(Node *n)
+    {
+        if (nodeExists(n->key) != NULL)
+        {
+            cout << "Node already exists with key value :" << n->key << ".Append another node with different key value\n";
+        }
+        else
+        {
+            n->next = head;
+            head = n;
+            cout << "Node appended\n";
+        }
+    }
 
     // insert a node after a particular node in the list
 };
