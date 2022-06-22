@@ -188,3 +188,17 @@ Conside school staff flow as hierarchical tree example.
 6.  Edge: this is a connection between one node to another. It is a line between two nodes or a node and a leaf.
 7.  Path: is a number of successive edges from source node to destination node.
 8.  Degree of node: this is equal to number of children, a node have.
+
+\*\* Properties of tree data structure(important terms)
+
+- Tree can be termed as `Recursive` data structure
+  This means that we can devide a whole tree into subtrees repeatedly until we reach the single node of the tree.
+- In a valid for `N nodes` we have `N-1` edges/links.
+
+- `Depth of node`: this represents the number of edges from the tree's root node to the node. Depth of root node is 0.
+- `Height of node` : it's the number of edges on the longest path between that and leaf.
+- `Height of tree` : this is the height of its root node.
+
+# Binary tree
+
+In a binary tree, we can not have more than two children per parent. 
