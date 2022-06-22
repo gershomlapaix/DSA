@@ -106,6 +106,26 @@ A structure in C++ is a group of data elements grouped together under one name. 
 5. Dynamic binding
 6. Message passing
 
+\*\* Types of constructors
+
+1. Default parameter
+   this is a constructor which doesn't take an argument
+2. Parameterized constructor
+3. Copy constructor
+   is a member function which initializes an object using another object of the same class.
+
+\*\* Destructor
+is a member function which destructs or delete an object.
+
+It is called when:
+
+- the function ends
+- the program ends
+- a block containing local variabls ends
+- a delete operator is called
+
+` A destructor is explicitly created when there is a need to release a memory before the class instance is destroyed. This must be to avoid memory leak`
+
 ## Queue
 
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
