@@ -56,6 +56,7 @@ public:
         cout << "\t car company model is " << model_name << endl;
     }
 
+// destructors
     ~Cars()
     {
         cout << "\nDestructor called\n";

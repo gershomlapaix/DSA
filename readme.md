@@ -126,6 +126,12 @@ It is called when:
 
 ` A destructor is explicitly created when there is a need to release a memory before the class instance is destroyed. This must be to avoid memory leak`
 
+# Pointer to objects
+
+1. Passing objects as arguments in functions
+2. Returning Objects from functions
+3. Pointer to objects
+
 ## Queue
 
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
