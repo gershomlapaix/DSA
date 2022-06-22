@@ -55,6 +55,11 @@ public:
         cout << "\n\t Car company name is " << companyName << endl;
         cout << "\t car company model is " << model_name << endl;
     }
+
+    ~Cars()
+    {
+        cout << "\nDestructor called\n";
+    }
 };
 
 int main()
