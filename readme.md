@@ -77,7 +77,34 @@ Inside the function, the reference is used to access the actual arguments used i
 Inside the function, the address is used to access the actual argument used in the call. This means that the changes made to the parameter affect the passed argument.
 
 ## Structures
-A structure in C++ is a group of  data elements grouped together under one name. These data members can have different types and different lengths. It is a `user defined data type` which allows us to combine data items of different kinds. 
+
+A structure in C++ is a group of data elements grouped together under one name. These data members can have different types and different lengths. It is a `user defined data type` which allows us to combine data items of different kinds.
+
+## OOP
+
+# Procedural Oriented programming vs Object Oriented programming
+
+1. Procedural programming
+
+- List of instructions for a computer to follow
+- Group of similar tasks are organized as functions
+- Most functions shared global data
+
+2. Object Oriented Programming
+
+- Programs are divided into Objects
+- Data structures are designed such that they characterize objects.
+- Functions that operate on the data of an object are tied together in that the same data structure.
+- Data is hidden and cannot be directly accessed.
+
+\*\* Basic concepts
+
+1. Classes & objects
+2. Data abstraction and encapsulation
+3. Inheritance
+4. Polymorphism
+5. Dynamic binding
+6. Message passing
 
 ## Queue
 
