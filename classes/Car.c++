@@ -14,6 +14,31 @@ private:
     double price;
 
 public:
+    Cars()
+    {
+        cout << "Default constructor called\n";
+    }
+    Cars(string cname, string mname, string fltype, float m, double p)
+    {
+        cout << "\nParameterized constructor called\n";
+        companyName = cname;
+        model_name = mname;
+        fuel_type = fltype;
+        mileage = m;
+        price = p;
+    }
+
+    // copy constuctor
+    Cars(Cars &obj)
+    {
+        cout << "\nCopy constructor called\n";
+        companyName = obj.companyName;
+        model_name = obj.model_name;
+        fuel_type = obj.fuel_type;
+        mileage = obj.mileage;
+        price = obj.price;
+    }
+
     // member functions
     void setData(string cname, string mname, string fltype, float m, double p)
     {
@@ -35,8 +60,12 @@ public:
 int main()
 {
     Cars car1;
-    car1.setData("Toyota", "Altis", "Petrol", 15.5, 1500000);
-    car1.displayData();
-    
+    Cars car2("Toyota", "Altis", "Petrol", 15.5, 1500000);
+    car2.displayData();
+
+    // call copy constructor
+    Cars car3 = car2;
+    car3.displayData();
+
     return 0;
 }
