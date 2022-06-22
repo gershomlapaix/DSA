@@ -53,8 +53,10 @@ int main()
     comp3 = add2Number(comp1, comp2);
     comp3.displayData();
 
+    cout << "\n\t After using pointers\n\t-------------\n";
     ComplexNumber *ptr;
     ptr = &comp3;
 
+    ptr->displayData();
     cout << (ptr == &comp3) << endl;
 }
