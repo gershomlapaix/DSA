@@ -171,3 +171,4 @@ Linked list has nodes where each node contains `data field` and `reference` to t
     3. Not cache friendly.
 
 \*\* Singly linked list
+
