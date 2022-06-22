@@ -76,6 +76,14 @@ Inside the function, the reference is used to access the actual arguments used i
 
 Inside the function, the address is used to access the actual argument used in the call. This means that the changes made to the parameter affect the passed argument.
 
+# Recursive functions
+
+A function that calls itself. This technique is called recursion. `Recursion` is the process of repeating items in a self-similar way.
+
+The recursion continues until some condition is met to prevent it.
+
+If the speed of the program is vital, then, you should avoid using recursion. Recursions use more memory and are generally slow.
+
 ## Structures
 
 A structure in C++ is a group of data elements grouped together under one name. These data members can have different types and different lengths. It is a `user defined data type` which allows us to combine data items of different kinds.
