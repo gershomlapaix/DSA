@@ -145,7 +145,8 @@ It is called when:
 - `Files` are used to store data permanently.
 - `A stream` is an abstraction that represents a device on which input and output operations are perfomed. It can be represented as a source or destination of characters of indefinite length.
 
-** Data types in file handling
+\*\* Data types in file handling
+
 1. ofstrean: it's data type that represents the output file stream and is used to create files and to write information to the files.
 2. ifstream: represents the input file stream and is used to read information from files.
 3. fstream: represents the file stream generally. It has capabilities of both `ofstream` and `ifstream` which means it can create files, write information to the files, and read information from the files.
@@ -232,3 +233,31 @@ this is a tree data structure in which each node has `at most two children` whic
 - Max number of nodes at level X = 2^X;
 - For a binary tree, maximum no of nodes with height h = 2^0 + 2^1+ .... +2^h = 2^(h+2) - 1
 - `BALANCED` binary tree: this is when the difference between the height of the left and right subtree for every node is not more than k(usually 1)
+
+# Graphs
+
+Graphs consists of a finite of vertices(or nodes) and set of edges(or links) which connect a pair of nodes.
+Trees vs graph
+
+1.  Only one path/edge btn 2 nodes 1. Multiple edges btn 2 nodes.
+2.  Has a root node 2. No root node
+3.  Don't have loops 3. Can have loops
+4.  Have N-1 edges 4. No of edges is not defined
+5.  Hierarchical model 5. Network model
+
+Types of graphs
+
+- Directed graph
+- Undirected graph: these are bidirectional, with no direction associated with them. This graph can be traversed in either direction.
+- Weighted graphs: each branch is a given a numberical weight
+- Unweighted graph: is a graph in which all edges/paths are considered to have same weight.
+
+# Adjacency matrix
+
+is a way of representing a graph as a matric of booleans. A finite graph can be represented in the form of square matrix on a computer, where the boolean value of the matrix indicates of there is a direct path between two vertices
+
+Adjacency matrix brings up the drawback of using unnecessary space which stores 0s(from unlinks)
+
+# Adjacency list
+
+In adjacency list, we use an array of a list to represent the graph. The size of the array is equal to the number of vertices. Let the array be an array[]. An entry array[i] represents the list of vertices adjacent to the ith vertex.
