@@ -11,7 +11,7 @@ int main()
 
     int x;
     float y;
-    ofstream myFile("xyz.txt", ios::out | ios::app);
+    ofstream myFile("xyz.txt", ios::app | ios::ate);
     myFile << arr;
     myFile.close();
 
