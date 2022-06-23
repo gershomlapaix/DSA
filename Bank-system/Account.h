@@ -1,4 +1,4 @@
-#ifndef H_Account;
+#ifndef H_Account
 #define H_Account
 #include <iostream>
 #include <string>
@@ -14,7 +14,7 @@ private:
 
 public:
     Account() {}
-    Account(int accN, string accO, int deposit) {}
+    Account(int accN, string accO, int dep);
 
     // getters and setters
 
@@ -27,7 +27,7 @@ public:
         return accountNumber;
     }
 
-    void setAccountOwner(int accO)
+    void setAccountOwner(string accO)
     {
         accountOwner = accO;
     }
@@ -36,10 +36,20 @@ public:
     {
         return accountOwner;
     }
-    // bank operations
 
-    void deposit(int amount);
+    void setDeposit(int dep)
+    {
+        deposit = dep;
+    }
+    int getDeposit()
+    {
+        return deposit;
+    }
+
+    // bank operations
+    void registerAccount(Account *account);
+    void depositMoney(int amount);
     void withDraw(int amount);
 };
 
-#endif;
+#endif
