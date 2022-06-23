@@ -14,14 +14,14 @@
 
 - Machine language: it's the language of machines, constisting of bits(1 s and 0s) put together into chunks like bytes, a group of 8 bits, and lots of other larger sizes.
 
-## C++
+# C++
 
 C++ is a high-level language developed by Bjarne Stroustrup starting in 1979 at Bell labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and various versions of UNIX.
 
 It is an extension to C programming language
 It has OOP features.
 
-# Variables
+## Variables
 
 Variable : named storage that our programs can manipulate
 Each variable needs an identifier that distinguishes if from others.
@@ -41,7 +41,7 @@ Upper and lowercase letters are distinct because c++ is case-sensitive
 
 Note: The size and range of data types depend on the system the program is compiled on.
 
-# Operators
+## Operators
 
 An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations.
 
@@ -52,11 +52,11 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 - Bitwise operators(&, |,, ^, ~, <<, >>, )
 - Misc operators(sizeof, condition ? X:Y)
 
-## Pointers
+# Pointers
 
 Dynamic memory allocation: allows to set array size dynamically during run time rather that at compile time.
 
-## Functions
+# Functions
 
 1.  `Inline function`: if a function is inline, the compiler places it's copy of the code at each point where that function is called at compile time.
 
@@ -84,11 +84,11 @@ The recursion continues until some condition is met to prevent it.
 
 If the speed of the program is vital, then, you should avoid using recursion. Recursions use more memory and are generally slow.
 
-## Structures
+# Structures
 
 A structure in C++ is a group of data elements grouped together under one name. These data members can have different types and different lengths. It is a `user defined data type` which allows us to combine data items of different kinds.
 
-## OOP
+# OOP
 
 # Procedural Oriented programming vs Object Oriented programming
 
@@ -134,13 +134,23 @@ It is called when:
 
 ` A destructor is explicitly created when there is a need to release a memory before the class instance is destroyed. This must be to avoid memory leak`
 
-# Pointer to objects
+## Pointer to objects
 
 1. Passing objects as arguments in functions
 2. Returning Objects from functions
 3. Pointer to objects
 
-## Queue
+# File handlding in C++
+
+- `Files` are used to store data permanently.
+- `A stream` is an abstraction that represents a device on which input and output operations are perfomed. It can be represented as a source or destination of characters of indefinite length.
+
+** Data types in file handling
+1. ofstrean: it's data type that represents the output file stream and is used to create files and to write information to the files.
+2. ifstream: represents the input file stream and is used to read information from files.
+3. fstream: represents the file stream generally. It has capabilities of both `ofstream` and `ifstream` which means it can create files, write information to the files, and read information from the files.
+
+# Queue
 
 Queue is a `linear data structure` which operates in a FIFO or LILO. Queue is ADT with a bounded(predefined) capacity.
 
@@ -153,18 +163,18 @@ It is a simple data structure that allows adding and removing elements in FIFO o
 
 1. Enqueue() 2) dequeue 3) isFull 4) isEmpty 5) count
 
-## Linked list
+# Linked list
 
 It's a linear data structure, in which elements are stored at contiguous memory locations. The elements in linked list are linked using `pointers`
 
 Linked list has nodes where each node contains `data field` and `reference` to the next node in the list.
 
-# Advantages
+## Advantages
 
     1. Dynamic size(creating the space needed only)
     2. Ease of insertion and deletion
 
-# Disadvantages
+## Disadvantages
 
     1. Random access is not allowed. We have to access elements sequentially starting from the first node.
     2. Extra memory space for a pointer is required
@@ -172,7 +182,7 @@ Linked list has nodes where each node contains `data field` and `reference` to t
 
 \*\* Singly linked list
 
-## Tree DS
+# Tree DS
 
 Tree is a non linear data structure that simulates a hierarchical tree structure with a root value and subtress of children with parent node, represented as set linked nodes.
 
@@ -199,6 +209,26 @@ Conside school staff flow as hierarchical tree example.
 - `Height of node` : it's the number of edges on the longest path between that and leaf.
 - `Height of tree` : this is the height of its root node.
 
-# Binary tree
+### Types of trees
 
-In a binary tree, we can not have more than two children per parent. 
+1. General tree
+2. Binary tree
+3. Binary search tree
+4. AVL tree
+5. Spanning tree
+6. B-Tree
+7. B+ tree
+8. Heap tree
+
+## Binary tree
+
+this is a tree data structure in which each node has `at most two children` which are referred to as `Left child(LC)` and the `Right child(RC)`.
+
+\*\* Important terms in BT
+
+- A binary tree is called `STRICT/PROPER` binary tree, when each node has 2 or 0 children.
+- A binary tree is called `COMPLETE` binary tree if all levels except the last are completely filled and all nodes are as left as possible.
+- A binary tree is caller `PERFECT` binary tree of all levels are completely filled with 2 children each.
+- Max number of nodes at level X = 2^X;
+- For a binary tree, maximum no of nodes with height h = 2^0 + 2^1+ .... +2^h = 2^(h+2) - 1
+- `BALANCED` binary tree: this is when the difference between the height of the left and right subtree for every node is not more than k(usually 1)
