@@ -15,7 +15,7 @@ Account::Account(int accN, string accO, int dep)
 
 void Account::registerAccount(Account *account)
 {
-    ofstream accounts("accounts.dat", ios::out | ios::app | ios::ate |);
+    ofstream accounts("accounts.dat",ios::ate | ios::out | ios::app );
     accounts << account->accountNumber << "\t" << account->accountOwner;
 
     accounts.close();
@@ -41,7 +41,6 @@ int main()
         Account acc;
 
         accPtr = &acc;
-        // acc.registerAccount(accPtr);
 
         switch (option)
         {
