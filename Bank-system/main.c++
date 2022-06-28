@@ -15,12 +15,10 @@ Account::Account(int accN, string accO, int dep)
 
 void Account::registerAccount(Account *account)
 {
-    fstream fio;
-    fio.open("accounts.doc", ios::trunc | ios::out | ios::in);
-    fio << account->accountNumber << "\t"
-        << "\t" << account->deposit << "\t" << account->accountOwner;
+    ofstream accounts("accounts.dat", ios::out | ios::app | ios::ate |);
+    accounts << account->accountNumber << "\t" << account->accountOwner;
 
-    fio.close();
+    accounts.close();
 }
 
 int main()
@@ -28,7 +26,8 @@ int main()
 
     Account *accPtr;
 
-    int option, accountCode, amount;
+    int option,
+        accountCode, amount;
     string names;
 
     do
@@ -42,7 +41,7 @@ int main()
         Account acc;
 
         accPtr = &acc;
-        acc.registerAccount(accPtr);
+        // acc.registerAccount(accPtr);
 
         switch (option)
         {
@@ -61,7 +60,6 @@ int main()
             acc.setDeposit(500);
 
             acc.registerAccount(accPtr);
-            cout << acc.getAccountOwner() << endl;
             break;
 
         case 3:
@@ -74,4 +72,6 @@ int main()
         }
 
     } while (option != 0);
+
+    return 0;
 }
