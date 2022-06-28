@@ -23,16 +23,20 @@ void Account::registerAccount(Account *account)
     accounts.close();
 }
 
-void Account::depositMoney(int amount)
+void Account::depositMoney(int amount, int accountCode)
 {
-    int code,mon;
+    int code, mon;
     string names;
 
     ifstream inFile("accounts.dat");
+    ofstream outFile("accounts.dat");
     while (inFile >> code >> names >> mon)
     {
-        // inFile >> mon;
-        cout << mon << "\n";
+        if (code == accountCode)
+        {
+            mon += amount;
+            cout<<mon<<endl;
+        }
     }
 
     inFile.close();
@@ -88,7 +92,7 @@ int main()
             // }
             // inFile.close();
             // acc.depositMoney(440);
-            acc.depositMoney(503);
+            acc.depositMoney(503,3884);
             break;
         case 3:
             system("clear");

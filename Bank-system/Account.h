@@ -41,7 +41,7 @@ public:
     {
         deposit = dep;
     }
-    
+
     int getDeposit()
     {
         return deposit;
@@ -49,7 +49,7 @@ public:
 
     // bank operations
     void registerAccount(Account *account);
-    void depositMoney(int amount);
+    void depositMoney(int amount, int accountCode);
     void withDraw(int amount);
 };
 
