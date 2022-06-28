@@ -41,6 +41,7 @@ public:
     {
         deposit = dep;
     }
+    
     int getDeposit()
     {
         return deposit;
