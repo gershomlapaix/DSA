@@ -29,17 +29,24 @@ void Account::depositMoney(int amount, int accountCode)
     string names;
 
     ifstream inFile("accounts.dat");
-    ofstream outFile("accounts.dat");
+    ofstream outFile("temp.dat");
+
     while (inFile >> code >> names >> mon)
     {
         if (code == accountCode)
         {
             mon += amount;
-            cout<<mon<<endl;
+            outFile << code << "\t" << names << "\t" << mon << endl;
+            break;
         }
+        outFile << code << "\t" << names << "\t" << mon << endl;
     }
 
+    remove("accounts.dat");
+    rename("temp.dat", "accounts.dat");
+
     inFile.close();
+    outFile.close();
 }
 
 int main()
@@ -86,13 +93,7 @@ int main()
             break;
 
         case 2:
-            // while (inFile >> accountCode >> names >> amount)
-            // {
-            //     cout << accountCode << "\t" << names << "\t" << amount << endl;
-            // }
-            // inFile.close();
-            // acc.depositMoney(440);
-            acc.depositMoney(503,3884);
+            acc.depositMoney(1000, 1002);
             break;
         case 3:
             system("clear");
