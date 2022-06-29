@@ -37,6 +37,14 @@ void Account::depositMoney(int amount, int accountCode)
         {
             mon += amount;
             outFile << code << "\t" << names << "\t" << mon << endl;
+            cout << "\n\t-----------------------------------------------------------";
+            cout << "\n\t| Account Code"
+                 << "\t | Names\t\t | New Balance    | \n";
+            cout << "\n\t-----------------------------------------------------------";
+            cout << "\n\t|\t" << code << "\t\t" << names << "\t\t\t" << mon << endl;
+            cout << "\n\t----------------------------------------------------------\n\n";
+            // cout << "\n\t-----------------------------------\n\t Data updated successfully\n\t-----------------------------------\n\n";
+
             break;
         }
         outFile << code << "\t" << names << "\t" << mon << endl;
