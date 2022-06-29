@@ -262,7 +262,7 @@ int main()
             break;
 
         case 6:
-            system("cls");
+            system("clear");
             break;
 
         default:
