@@ -6,7 +6,7 @@
 using namespace std;
 
 // GLOBAL VARIABLES
-ofstream accounts("accounts.dat", ios::ate | ios::out | ios::app);
+ofstream accounts("accounts.csv", ios::ate | ios::out | ios::app);
 
 // definitions
 Account::Account(int accN, string accO, int dep)
@@ -28,8 +28,8 @@ void Account::depositMoney(int amount, int accountCode)
     int code, mon;
     string names;
 
-    ifstream inFile("accounts.dat");
-    ofstream outFile("temp.dat");
+    ifstream inFile("accounts.csv");
+    ofstream outFile("temp.csv");
 
     while (inFile >> code >> names >> mon)
     {
@@ -101,7 +101,7 @@ int main()
             break;
 
         case 2:
-            acc.depositMoney(1000, 1002);
+            acc.depositMoney(2000, 100);
             break;
         case 3:
             system("clear");
