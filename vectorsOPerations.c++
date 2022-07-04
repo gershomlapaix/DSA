@@ -45,9 +45,6 @@ int main()
     cout << "\n\tCapacity of the vector\n--------------------------\n\n";
 
     vector<int> b;
-
-    // initialize the vector with values 1 to 5
-
     for (int i = 1; i < 5; i++)
     {
         b.push_back(i);
@@ -55,5 +52,6 @@ int main()
 
     cout << "Size of vector b:: " << b.size() << endl;
     cout << "Capacity of vector b ::" << b.capacity() << endl;
+
     return 0;
 }
