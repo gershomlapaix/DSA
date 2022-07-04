@@ -33,6 +33,14 @@ int main()
     cout << "\nDescendign order\n--------------------------\n\n"; // there's third parameter to sort method
     sort(names.begin(), names.end(), greater<string>());
 
+    for (auto name = names.begin(); name != names.end(); name++)
+    {
+        if (*name == "John")
+        {
+            names.erase(name);
+        }
+    }
+
     cout << "Elements:: ";
     for (auto name : names)
     {
