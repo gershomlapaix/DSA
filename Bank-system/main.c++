@@ -5,9 +5,6 @@
 
 using namespace std;
 
-// GLOBAL VARIABLES
-ofstream accounts("accounts.csv", ios::ate | ios::out | ios::app);
-
 // definitions
 Account::Account(int accN, string accO, int dep)
 {
@@ -18,6 +15,8 @@ Account::Account(int accN, string accO, int dep)
 
 void Account::registerAccount(Account *account)
 {
+    ofstream accounts("accounts.csv", ios::ate | ios::out | ios::app);
+
     accounts << account->accountNumber << "\t" << account->accountOwner << "\t" << account->deposit << "\n";
 
     accounts.close();
@@ -43,15 +42,17 @@ void Account::depositMoney(int amount, int accountCode)
             cout << "\n\t-----------------------------------------------------------";
             cout << "\n\t|\t" << code << "\t\t" << names << "\t\t\t" << mon << endl;
             cout << "\n\t----------------------------------------------------------\n\n";
-            // cout << "\n\t-----------------------------------\n\t Data updated successfully\n\t-----------------------------------\n\n";
+            cout << "\n\t-----------------------------------\n\t Data updated successfully\n\t-----------------------------------\n\n";
 
-            break;
+            // break;
         }
-        outFile << code << "\t" << names << "\t" << mon << endl;
+        else{
+            outFile << code << "\t" << names << "\t" << mon << endl;
+        }
     }
 
-    remove("accounts.dat");
-    rename("temp.dat", "accounts.dat");
+    remove("accounts.csv");
+    rename("temp.csv", "accounts.csv");
 
     inFile.close();
     outFile.close();
