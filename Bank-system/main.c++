@@ -17,7 +17,7 @@ void Account::registerAccount(Account *account)
 {
     ofstream accounts("accounts.csv", ios::ate | ios::out | ios::app);
 
-    accounts << account->accountNumber << "\t" << account->accountOwner << "\t" << account->deposit << "\n";
+    accounts << account->accountNumber << "," << account->accountOwner << "," << account->deposit << "\n";
 
     accounts.close();
 }
@@ -46,11 +46,11 @@ void Account::depositMoney(int amount, int accountCode)
 
             // break;
         }
-        else{
+        else
+        {
             outFile << code << "\t" << names << "\t" << mon << endl;
         }
     }
-
     remove("accounts.csv");
     rename("temp.csv", "accounts.csv");
 
@@ -67,8 +67,6 @@ int main()
         accountCode, amount = 500;
     string names;
     string line;
-
-    ifstream inFile("accounts.dat");
 
     do
     {
