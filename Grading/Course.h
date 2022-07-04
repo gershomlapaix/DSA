@@ -8,6 +8,7 @@ using namespace std;
 
 class Course
 {
+    
 private:
     string courseName;
     string courseNumber;
@@ -16,7 +17,6 @@ private:
 
 public:
     Course();
-    Course(string name = "", string number = "", char grade = '*', int details = 0);
     void setCourseInfor(string name, string number, char grade, int details);
     void setCourseName(string name);
     void setCourseNumber(string number);
