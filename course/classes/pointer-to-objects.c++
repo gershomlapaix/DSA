@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
@@ -59,4 +60,15 @@ int main()
 
     ptr->displayData();
     cout << (ptr == &comp3) << endl;
+
+    // handling times in c++
+
+    time_t now = time(0);
+
+    tm *ltm = localtime(&now);
+
+    cout << "Current year is " << 1900 + ltm->tm_year << endl;
+    cout << "Current month of the year is " << 1 + ltm->tm_mon << endl;
+    cout << "Day of the month is " << ltm->tm_mday << endl
+         << endl;
 }
