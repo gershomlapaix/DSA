@@ -69,6 +69,8 @@ int main()
 
     cout << "Current year is " << 1900 + ltm->tm_year << endl;
     cout << "Current month of the year is " << 1 + ltm->tm_mon << endl;
-    cout << "Day of the month is " << ltm->tm_mday << endl
+    cout << "Day of the month is " << ltm->tm_mday << endl;
+    cout << "Current hour is " << ltm->tm_hour << endl;
+    cout << "Current minute is " << ltm->tm_min << endl
          << endl;
 }
