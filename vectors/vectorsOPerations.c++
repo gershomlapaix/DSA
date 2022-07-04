@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <bits/stdc++.h> //for using the function sort()
 
@@ -72,28 +71,5 @@ int main()
 
     cout << b.at(4) << endl;
     cout << b.front() << endl;
-
-    // Sorting an array
-    cout << "\n\tSorting a vector\n--------------------------\n\n";
-
-    vector<string> names{"John", "Jane", "Mary", "Bob", "Tom"};
-
-    cout << "\nBefore sorting : ";
-    for (auto i = names.begin(); i != names.end(); i++)
-    {
-        cout << *i << " ";
-    }
-
-    cout << "\nAfter sorting : ";
-    sort(names.begin(), names.end());
-
-    for (auto name : names)
-    {
-        cout << name << " ";
-    }
-
-    cout << endl
-         << endl;
-
     return 0;
 }
