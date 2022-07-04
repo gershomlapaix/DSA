@@ -14,6 +14,9 @@ int main()
     ofstream outputFile("names.txt");
 
     ostream_iterator<string> outputIterator(outputFile, "\n");
+
+    sort(names.begin(), names.end());
+
     copy(names.begin(), names.end(), outputIterator);
 
     return 0;

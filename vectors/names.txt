@@ -1,5 +1,5 @@
-John
-Jane
-Mary
 Bob
+Jane
+John
+Mary
 Tom
