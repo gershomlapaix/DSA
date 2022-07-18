@@ -134,6 +134,8 @@ It is called when:
 
 ` A destructor is explicitly created when there is a need to release a memory before the class instance is destroyed. This must be to avoid memory leak`
 
+ `Memory leak` : occurs when programs allocated memory by new keyword and forgets to deallocate the memory by `delete() function or delete[]`.
+
 ## Pointer to objects
 
 1. Passing objects as arguments in functions
